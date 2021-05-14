@@ -6,12 +6,12 @@ const Products = ({ createOrder }) => {
   };
   return (
     <>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="sm:flex sm:w-full lg:grid grid-cols-2 gap-4">
         {map(data, (item, index) => {
           return (
             <div
               key={index}
-              className="w-1/2 p-4 rounded-none shadow bg-gray-800"
+              className="sm:w-full lg:w-2/3  p-4 rounded-none shadow bg-gray-800"
             >
               <div className="w-full flex flex-row">
                 <div className="w-1/2 mx-4">

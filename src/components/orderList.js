@@ -3,10 +3,9 @@ import Countdown from "react-countdown";
 
 const OrderList = ({ orders, onDeleteOrder }) => {
   const [time] = useState(Date.now() + orders.time);
-console.log(Date.now())
   return (
     <div className="w-full">
-      <div className="w-full p-4 rounded shadow flex flex-row my-4">
+      <div className="w-full p-4 rounded shadow lg:flex lg:flex-row my-4">
         <div className="w-1/3 flex flex-row ">
           <h1 className="text-gray-800 text-xl font-bold">Name:</h1>
           <h1 className="text-gray-500 text-xl font-light mx-4">
@@ -19,7 +18,7 @@ console.log(Date.now())
             {orders.time / 1000}
           </h1>
         </div>
-        <div className="w-1/3 flex flex-row ">
+        <div className="sm:w-full lg:w-1/3 flex flex-row ">
           {time !== "" ? (
             <Countdown date={time}>
               <button

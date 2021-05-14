@@ -37,11 +37,10 @@ function App() {
           <Products createOrder={createOrder} />
         </div>
         <div className="w-1/2 mx-4">
-          {orders.map((order, index) => (
+        {orders.map((order) => (
             <Orders
-              key={index}
+              key={order.orderId}
               orders={order}
-              index={index}
               onDeleteOrder={onDeleteOrder}
             />
           ))}

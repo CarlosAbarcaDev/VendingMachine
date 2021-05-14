@@ -2,31 +2,31 @@ export const data = [
     {
         id: 0,
         name: 'Soda',
-        time: 1000,
+        time: 8000,
         complete: false
     },
     {
         id: 1,
         name: 'Cookies',
-        time: 1000,
+        time: 10000,
         complete: false
     },
     {
         id: 2,
         name: 'Chocolate',
-        time: 1000,
+        time: 15000,
         complete: false
     },
     {
         id: 3,
         name: 'Beef',
-        time: 1000,
+        time: 30000,
         complete: false
     },
     {
         id: 4,
         name: 'Chicken',
-        time: 100000,
+        time: 300000,
         complete: false
     },
     {
